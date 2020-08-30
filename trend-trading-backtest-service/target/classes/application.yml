@@ -1,0 +1,10 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/  #注册服务地址
+spring:
+  application:
+    name:  trend-trading-backtest-service  #服务名称
+  zipkin:
+    base-url: http://localhost:9411 #链路追踪
+feign.hystrix.enabled: true  #开启feign模式的阻断器
